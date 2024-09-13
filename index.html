@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'anonymous': "url('anonymous-8k-nw.jpg')",
+          },
+          fontFamily: {
+            sans: ['Inconsolata', 'monospace'],
+          },
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="flex flex-row">
+    <div class="bg-center bg-cover bg-anonymous w-1/2 h-screen"></div>
+    <div class="w-1/2 h-screen bg-[#890d0c]">
+      <h1 class="text-[#fff] text-[500%] text-center mt-5 font-sans-Inconsolata font-bold">&lt;Hello World!&gt;</h1>
+      <h2 class="text-[#fff] text-[200%] text-center mt-0 mb-[25%] font-sans-Inconsolata font-bold">&lt;Website Comming Soon&gt;</h2>
+      <div>
+        <div class="flex flex-col">
+        <form class="align-center flex flex-col justify-content-center" action=""> 
+        <label for="email"></label>
+        <p class="text-[#fff] text-[100%] text-center mt-0 font-sans-Inconsolata font-bold">Enter Your email to subscribe</p>
+        <input type="email" id="email" class="w-[60%] ml-[20%] text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John@gmail.com" required />
+        <button type="submit" class="text-[#fff] ml-[42%] mt-5 border-2 w-[120px] rounded rounded-circle">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
